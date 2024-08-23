@@ -1,10 +1,10 @@
 import axios from "axios";
-//import hubspot from '@hubspot/api-client'
+import hubspot from '@hubspot/api-client'
 
-//const hubspotClient = new hubspot.Client({ accessToken: process.env.Huntr_HubSpot_Integration });
+const hubspotClient = new hubspot.Client({ accessToken: process.env.Huntr_HubSpot_Integration });
 
 
-//console.log(hubspotClient)
+console.log(hubspotClient)
 
 export async function members() {
   //console.log(hubspotClient)
