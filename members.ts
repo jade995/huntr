@@ -7,7 +7,7 @@ const hubspotClient = new hubspot.Client({ accessToken: process.env.Huntr_HubSpo
 console.log(hubspotClient)
 
 export async function members() {
-  //console.log(hubspotClient)
+  console.log(hubspotClient)
   const response = await axios.get(`https://api.huntr.co/org/members`, {
     headers: {
       Authorization: `Bearer ${import.meta.env.VITE_ACCESS_TOKEN}`,
